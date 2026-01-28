@@ -2,7 +2,9 @@ import csv
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
 
-TOKEN = "8449330341:AAFyYfJzWEEOs2rGnLq8zXB6TrLnbSLpDj4"
+import os
+TOKEN = os.environ.get("TOKEN")
+
 
 # read type
 products_by_type = {}
